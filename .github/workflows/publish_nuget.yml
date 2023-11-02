@@ -6,7 +6,7 @@ on:
       - created
 
 jobs:
-  build-test-pack:
+  publish:
     runs-on: ubuntu-latest
 
     steps:
@@ -19,7 +19,7 @@ jobs:
         dotnet-version: 7.0.x
 
     - name: Set NuGet Version
-      run: echo ::set-env name=NUGET_VERSION::$(echo ${{ github.ref_name }} | cut -d 'v' -f 2)
+      run: echo "NUGET_VERSION=$(echo ${{ github.ref_name }} | cut -d 'v' -f 2)" >> $GITHUB_ENV
 
     - name: Pack as NuGet package
       run: dotnet pack -c Release /p:Version=${{ env.NUGET_VERSION }}

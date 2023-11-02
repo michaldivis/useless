@@ -4,4 +4,19 @@
     <TargetFrameworks>net6.0;net7.0</TargetFrameworks>
   </PropertyGroup>
 
+	<PropertyGroup>
+		<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+		<PackageId>Useless</PackageId>
+		<Version>0.0.0-dev</Version>
+		<Authors>michaldivis</Authors>
+		<Company>Michal Diviš</Company>
+		<Product>Useless</Product>
+		<Description>A .NET library that does nothing. Also, it has no external dependencies.</Description>
+		<PackageProjectUrl>https://github.com/michaldivis/useless</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/michaldivis/useless</RepositoryUrl>
+		<PackageTags>useless</PackageTags>
+		<NeutralLanguage>en</NeutralLanguage>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+	</PropertyGroup>
+
 </Project>

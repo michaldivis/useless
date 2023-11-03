@@ -6,6 +6,7 @@
 
 	<PropertyGroup>
 		<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+		<GenerateDocumentationFile>True</GenerateDocumentationFile>
 		<PackageId>Useless</PackageId>
 		<Version>0.0.0-dev</Version>
 		<Authors>michaldivis</Authors>

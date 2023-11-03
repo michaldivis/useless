@@ -13,10 +13,15 @@
 		<Product>Useless</Product>
 		<Description>A .NET library that does nothing. Also, it has no external dependencies.</Description>
 		<PackageProjectUrl>https://github.com/michaldivis/useless</PackageProjectUrl>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<RepositoryUrl>https://github.com/michaldivis/useless</RepositoryUrl>
 		<PackageTags>useless</PackageTags>
 		<NeutralLanguage>en</NeutralLanguage>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="../../README.md" Pack="true" PackagePath="\"/>
+	</ItemGroup>
 
 </Project>
